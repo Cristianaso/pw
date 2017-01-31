@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Clasificacion</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th><center> Equipo </center></th>
+				<th><center> Puesto </center></th>
+				<th><center> Puntos </center></th>
+			</tr>
+			{% for i in posiciones %}
+			<tr>
+				<td><center> {{ i.nombreEquipo }} </center></td>
+				<td><center> {{ i.puesto }} </center></td>
+				<td><center> {{ i.puntos }} </center></td>
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Calendario</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th><center> Partido </center></th>
+				<th><center> Fecha </center></th>
+				<th><center> Hora </center></th>
+			</tr>
+			{% for i in jornadas %}
+			<tr>
+				<td><center> {{ i.nombreLocal }} vs {{ i.nombreVisitante }} </center></td>
+				<td><center> {{ i.fecha }} </center></td>
+				<td><center> {{ i.hora }} </center></td>
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>

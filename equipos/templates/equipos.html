@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Equipos</title>
+	</head>
+	<body>
+		<ul>
+		{% for i in listaEquipos %}
+			<li><strong> Nombre del equipo: </strong> {{ i.nombreEquipo }} </li>
+			<li><strong> Nombre del entrenador: </strong> {{ i.nombreEntrenador }} </li>
+			<p>  --------------------------------------------------------------------------------- </p>
+		{% endfor %}
+		</ul>
+	</body>
+</html>

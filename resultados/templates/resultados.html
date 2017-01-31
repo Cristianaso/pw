@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Resultados</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th><center> Partido </center></th>
+			</tr>
+			{% for i in resultados %}
+			<tr>
+				<td><center> {{ i.nombreLocal }} {{ i.golesLocal }} - {{ i.golesVisitante }} {{ i.nombreVisitante }} </center></td>
+			</tr>
+			<tr>
+				<td><center> ------------------------------------------------------------ </center></td>
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>

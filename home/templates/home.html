@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title> www.laLiguita.com </title>
+	</head>
+	<body>
+		<center><h3>BIENVENIDO, DISFRUTE DEL MEJOR DEPORTE DEL MUNDO</h3></center>
+		<div>
+			<ul>
+				<center><a href="home/equipos">Equipos</a></center>
+				<center><a href="home/calendario">Calendario</a></center>
+				<center><a href="home/resultados">Resultados</a></center>
+				<center><a href="home/clasificacion">Clasificacion</a></center>
+				{% if not user.is_authenticated %}
+					<center><a href="home/registro">Registro</a></center>
+					<center><a href="home/login">Iniciar Sesion</a></center>
+				{% else %}
+					<center><p>Usted ha iniciado sesion como {{ user.username }}</p></center>
+					<center><a href="home/logout">Cerrar Sesion</a></center>
+				{% endif %}
+			</ul>
+		</div>
+	</body>
+</html>
